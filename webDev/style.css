@@ -1,0 +1,27 @@
+body{
+  display: grid;
+  grid-template-areas:". form .";
+  grid-template-columns:1fr 1fr 1fr;
+  height: 100vh;
+}
+.form{
+  display: grid;
+  grid-area: form;
+  grid-template-areas: "input"
+                        "button"
+                        "span";
+  padding:20vh;
+}
+.input{
+  grid-area:input;
+  height: 1vh;
+  padding:3vh 2vh;
+}
+.button{
+  grid-area: button;
+  height: 10vh;
+  padding:5vh 1vh;
+}
+.span{
+  grid-area:span;
+}
